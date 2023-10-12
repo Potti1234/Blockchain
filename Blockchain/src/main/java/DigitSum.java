@@ -1,5 +1,5 @@
 class DigitSum {
-	public static void main(String[] args) {
+	public void calculateDigitSum() {
 		int value = 827492749;
 		
 		
