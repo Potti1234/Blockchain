@@ -34,7 +34,7 @@ public class JsonTest {
 	@Test
 	void nullTest() {
 		//given
-		String input = null;
+		String input = null; 
 		GsonBasics gsonBasics = new GsonBasics();
 		
 		//then
