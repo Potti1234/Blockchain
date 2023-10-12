@@ -1,3 +1,4 @@
+package Blockchain;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,7 +17,7 @@ public class GsonBasics {
 	   }
 	
 	@SuppressWarnings("deprecation")
-	public void getNameFromJson(String json) {
+	public String getNameFromJson(String json) {
 		LOG.info("Start");
 		JsonParser parser = new JsonParser();
 		JsonElement element = parser.parse(json);
@@ -24,5 +25,7 @@ public class GsonBasics {
 		JsonObject object = element.getAsJsonObject();
 		String name = object.get("name").getAsString();
 		LOG.info("Name: {}", name);
+		
+		return name;
 	}
 }

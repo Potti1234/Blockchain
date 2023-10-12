@@ -1,3 +1,4 @@
+package Blockchain;
 class DigitSum {
 	public void calculateDigitSum() {
 		int value = 827492749;
